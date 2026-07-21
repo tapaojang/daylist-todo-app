@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Daylist — Todo Dashboard (UI Prototype)
 
 A React.js frontend for a Todo application, built with mock data only. No backend, no API calls, no authentication — everything lives in memory for the session so the UI can be reviewed and extended before wiring up a real API.
@@ -59,3 +60,6 @@ All data access goes through `src/context/TodoContext.jsx`. To connect a real AP
 1. Replace the `useState(initialTodos)` seed with a fetch on mount.
 2. Swap `addTodo` / `updateTodo` / `deleteTodo` / `cycleStatus` to call your API, then update local state from the response (or use a data-fetching library like React Query).
 3. No component outside of `TodoContext.jsx` needs to change — pages and components only consume the context.
+=======
+# daylist-todo-app
+>>>>>>> 7184e62eaa975cf70b070e51ddeb2ef079f44051
