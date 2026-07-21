@@ -1,0 +1,128 @@
+/* ============================================
+   DESIGN TOKENS — "Desk Planner" system
+   ============================================ */
+:root {
+  /* --- Color: pastel sky + rose accent --- */
+  --color-bg: #FBF6FA;
+  --color-surface: #FFFFFF;
+  --color-surface-sunken: #F6EDF4;
+  --color-ink: #3E3552;
+  --color-ink-soft: #7C7191;
+  --color-ink-faint: #B6A9C9;
+  --color-border: #F0E1EC;
+  --color-border-strong: #E4CFE0;
+
+  --color-accent: #EA93B4;
+  --color-accent-ink: #FFFFFF;
+  --color-accent-soft: #FCE7F0;
+  --color-accent-soft-ink: #C65D8B;
+
+  /* Extra pastel hues used by the hero, tags, and date block */
+  --color-lavender: #B7A6E8;
+  --color-lavender-bg: #EFEAFB;
+  --color-sky: #A9C7EC;
+  --color-sky-bg: #E7F0FB;
+  --color-peach: #F0B584;
+  --color-peach-bg: #FCEEDF;
+  --color-mint: #7FCBAA;
+  --color-mint-bg: #E4F6ED;
+
+  /* Status system — three distinct, colorblind-considerate pastel hues */
+  --color-pending: #D98A3F;
+  --color-pending-bg: #FCEEDD;
+  --color-progress: #6E85E0;
+  --color-progress-bg: #EAEDFC;
+  --color-completed: #3FA47D;
+  --color-completed-bg: #E4F6EC;
+
+  --color-danger: #DB6D82;
+  --color-danger-bg: #FCEBEF;
+
+  /* --- Type --- */
+  --font-display: 'Space Grotesk', 'Segoe UI', sans-serif;
+  --font-body: 'Inter', 'Segoe UI', sans-serif;
+  --font-mono: 'JetBrains Mono', 'Consolas', monospace;
+
+  /* --- Spacing scale --- */
+  --sp-1: 4px;
+  --sp-2: 8px;
+  --sp-3: 12px;
+  --sp-4: 16px;
+  --sp-5: 20px;
+  --sp-6: 24px;
+  --sp-8: 32px;
+  --sp-10: 40px;
+  --sp-12: 48px;
+  --sp-16: 64px;
+
+  /* --- Radius --- */
+  --radius-sm: 8px;
+  --radius-md: 14px;
+  --radius-lg: 20px;
+  --radius-pill: 999px;
+
+  /* --- Shadow --- */
+  --shadow-sm: 0 1px 2px rgba(27, 33, 48, 0.06);
+  --shadow-md: 0 4px 16px rgba(27, 33, 48, 0.08);
+  --shadow-lg: 0 12px 32px rgba(27, 33, 48, 0.14);
+
+  /* --- Layout --- */
+  --sidebar-w: 232px;
+  --topbar-h: 76px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: var(--color-bg);
+  color: var(--color-ink);
+  font-family: var(--font-body);
+  -webkit-font-smoothing: antialiased;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+h1, h2, h3, h4 {
+  font-family: var(--font-display);
+  margin: 0;
+  letter-spacing: -0.01em;
+}
+
+p {
+  margin: 0;
+}
+
+button {
+  font-family: var(--font-body);
+  cursor: pointer;
+}
+
+a {
+  color: inherit;
+}
+
+::selection {
+  background: var(--color-accent-soft);
+  color: var(--color-accent);
+}
+
+/* Visible keyboard focus for accessibility */
+:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 2px;
+  border-radius: var(--radius-sm);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+  }
+}
