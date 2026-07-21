@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 # Daylist — Todo Dashboard (UI Prototype)
 
 A React.js frontend for a Todo application, built with mock data only. No backend, no API calls, no authentication — everything lives in memory for the session so the UI can be reviewed and extended before wiring up a real API.
